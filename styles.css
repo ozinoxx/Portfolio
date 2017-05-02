@@ -23,6 +23,29 @@
 
 .caption span.border {
   color: #fff;
-  font-size: 65px;
+  /*font-size: 50px;*/
 
+}
+/* Changes font size depending on screen resolution*/
+/*html { font-size: 50%; }
+body { font-size: 1em;}*/
+
+@media (min-width: 200px) {
+    .fontsize { font-size: 200%; }
+}
+
+@media (min-width: 300px) {
+    .fontsize { font-size: 250%; }
+}
+
+@media (min-width: 500px) {
+    .fontsize { font-size: 250%; }
+}
+
+@media (min-width: 700px) {
+    .fontsize { font-size: 250%; }
+}
+
+@media (min-width: 1200px) {
+    .fontsize { font-size: 250%;}
 }
