@@ -1,0 +1,132 @@
+p {
+  font-size: 125%;
+}
+.parallax {
+    /* The image used */
+    background-image: url("../media/background1.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url("../media/contact-background.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centericon {
+  text-align: center;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.caption span.border {
+  color: #fff;
+  /*font-size: 50px;*/
+
+}
+
+.skillsettitle, .aboutmetitle  {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+footer {
+  text-align: center;
+  height: 40px;
+}
+
+
+.fa-stack-1x {
+    color:white;
+}
+
+.icon-info {
+   color:#34495e;
+}
+
+
+.testcenter {
+  width: 100%;
+  display: inline-block;
+}
+
+
+form {
+  background: #fff;
+  text-align: center;
+  padding: 40px 0;
+
+}
+form input, form textarea {
+  /*font-family: 'Raleway', sans-serif;*/
+  text-align: center;
+  min-height: 50px;
+  width: 300px;
+  border: 2px solid orange;
+  border-radius: 50px;
+  display: block;
+  margin: 0px auto 15px;
+  padding: 0 15px;
+}
+
+form textarea {
+  border-radius: 30px;
+}
+form .button {
+  background: #3498db;
+  color: #fff;
+}
+
+.image-padding {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+
+/* Changes font size depending on screen resolution*/
+/*html { font-size: 50%; }
+body { font-size: 1em;}*/
+
+
+
+@media (min-width: 200px) {
+    .fontsize { font-size: 200%; }
+}
+
+@media (min-width: 300px) {
+    .fontsize { font-size: 250%; }
+}
+
+@media (min-width: 500px) {
+    .fontsize { font-size: 300%; }
+}
+
+@media (min-width: 700px) {
+    .fontsize { font-size: 300%; }
+}
+
+@media (min-width: 1200px) {
+    .fontsize { font-size: 300%;}
+}

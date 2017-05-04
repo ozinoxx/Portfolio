@@ -61,10 +61,11 @@ if (isset($_POST['submit'])) { // Här kollar vi om "Skicka"-knappen är klickad
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -73,32 +74,37 @@ if (isset($_POST['submit'])) { // Här kollar vi om "Skicka"-knappen är klickad
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="/" class="navbar-brand"><img class="img-fluid" src="media/jjlogo.png" alt="Responsive image" width="80px"></a>
+    <a href="#" class="navbar-brand"><img class="img-fluid" src="media/jjlogo.png" alt="Responsive image" width="80px"></a>
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
         <div><!--placeholder to evenly space flexbox items and center links--></div>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home<span class="sr-only">Home</span></a>
+                <a class="nav-link" href="index.html">Home<span class="sr-only">Home</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="contact.php">Contact Me</a>
             </li>
         </ul>
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item"><a class="nav-link" href="https://github.com/ozinoxx" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>-->
         </ul>
     </div>
 </nav>
 
-
+<div class="parallax1">
+  <div class="caption">
+    <h1 class="border">Send me a message!<br>I'll be in touch
+    </h1>
+  </div>
+</div>
 
 <form method="post">
   <?php echo $result; //prints out error to screen ?>
-  <input type="text" name="firstName" placeholder="First name" value="<?php echo $_post['firstName']; ?>" autofocus >
+  <input type="text" name="firstName" placeholder="First name" value="<?php echo $_post['firstName']; ?>" >
   <input type="text" name="lastName" placeholder="Last name" value="<?php echo $_post['lastName']; ?>">
 
   <input type="email" name="email" placeholder="E-mail" value="<?php echo $_post['email']; ?>">
