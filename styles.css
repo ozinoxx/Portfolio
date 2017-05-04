@@ -34,20 +34,30 @@ p {
   text-align: center;
 }
 
+footer {
+  text-align: center;
+  height: 40px;
+}
 
 
+.fa-stack-1x {
+    color:white;
+}
 
+.icon-info {
+   color:#34495e;
+}
 
+.centericon {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
+.testcenter {
+  width: 100%;
+  display: inline-block;
+}
 
 
 

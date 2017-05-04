@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) { // Här kollar vi om "Skicka"-knappen är klickad
 
     // Texten som visas efter att mejlet skickats.
     {
-      $result = "Thank you! We will be in touch shortly.";
+      $result = "Thank you! I will be in touch shortly.";
     }
   }
 }
@@ -77,13 +77,13 @@ if (isset($_POST['submit'])) { // Här kollar vi om "Skicka"-knappen är klickad
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
         <div><!--placeholder to evenly space flexbox items and center links--></div>
         <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#">Home<span class="sr-only">Home</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Contact Me</a>
             </li>
         </ul>
@@ -110,3 +110,17 @@ if (isset($_POST['submit'])) { // Här kollar vi om "Skicka"-knappen är klickad
 
   <input type="submit" class="button" name="submit" value="Send message">
 </form>
+
+</div>
+<footer class="footer">
+      <div class="container">
+        <span class="text-muted">© 2017</span>
+      </div>
+</footer>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
